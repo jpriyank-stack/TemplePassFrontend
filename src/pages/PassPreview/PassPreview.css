@@ -1,0 +1,229 @@
+.preview-page {
+  min-height: calc(100vh - 80px);
+
+  background: #f1f5f9;
+
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.pass-wrapper {
+  width: 650px;
+
+  background: white;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.temple-header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+
+  color: white;
+
+  padding: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.temple-logo {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  color: #1e3a8a;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 35px;
+}
+
+.temple-header h1 {
+  margin: 0;
+
+  font-size: 32px;
+}
+
+.temple-header p {
+  margin-top: 5px;
+
+  color: #dbeafe;
+}
+
+.divider {
+  height: 6px;
+
+  background: #fbbf24;
+}
+
+.pass-body {
+  padding: 35px;
+
+  display: grid;
+
+  grid-template-columns: 220px 1fr;
+
+  gap: 30px;
+}
+
+.qr-section {
+  text-align: center;
+}
+
+.qr-section img {
+  width: 190px;
+
+  height: 190px;
+
+  border-radius: 15px;
+
+  padding: 10px;
+
+  border: 1px solid #e2e8f0;
+}
+
+.qr-section p {
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+.ticket-status {
+  display: inline-block;
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+  padding: 6px 15px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.details h2 {
+  color: #1e3a8a;
+
+  margin: 15px 0;
+}
+
+.detail-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 12px 0;
+
+  border-bottom: 1px dashed #cbd5e1;
+}
+
+.detail-row span {
+  color: #64748b;
+}
+
+.detail-row b {
+  color: #0f172a;
+}
+
+.footer-text {
+  background: #eff6ff;
+
+  text-align: center;
+
+  padding: 18px;
+
+  color: #1e40af;
+
+  font-weight: 600;
+}
+
+.actions {
+  margin-top: 25px;
+
+  display: flex;
+
+  gap: 20px;
+}
+
+.print-btn,
+.new-btn {
+  padding: 14px 30px;
+
+  border-radius: 15px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+.print-btn {
+  background: #2563eb;
+
+  color: white;
+}
+
+.new-btn {
+  background: white;
+
+  color: #2563eb;
+
+  border: 2px solid #2563eb;
+}
+
+.no-pass {
+  padding: 50px;
+
+  text-align: center;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .pass-wrapper,
+  .pass-wrapper * {
+    visibility: visible;
+  }
+
+  .pass-wrapper {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    box-shadow: none;
+  }
+
+  .actions {
+    display: none;
+  }
+}

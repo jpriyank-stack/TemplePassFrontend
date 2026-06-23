@@ -1,0 +1,179 @@
+.app-header {
+  height: 75px;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 100;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  background: white;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.header-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.temple-logo {
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 25px;
+
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+
+  color: white;
+}
+
+.header-brand h2 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: #0f172a;
+}
+
+.header-brand span {
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+.header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  position: relative;
+}
+
+.user-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.avatar {
+  height: 42px;
+
+  width: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  font-weight: bold;
+}
+
+.user-box p {
+  margin: 0;
+
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.user-box span {
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+.menu-btn {
+  border: none;
+
+  background: #eff6ff;
+
+  height: 40px;
+
+  width: 40px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  color: #2563eb;
+}
+
+.profile-menu {
+  position: absolute;
+
+  right: 0;
+
+  top: 55px;
+
+  width: 200px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+}
+
+.profile-menu a,
+.profile-menu button {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  background: white;
+
+  text-decoration: none;
+
+  color: #334155;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+  background: #eff6ff;
+}
