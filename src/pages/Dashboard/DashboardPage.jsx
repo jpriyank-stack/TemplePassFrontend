@@ -73,7 +73,7 @@ export default function DashboardPage() {
             <span>✅</span>
 
             <div>
-              <p>Consumed</p>
+              <p>Checked-In</p>
 
               <h2>{stats?.summary?.totalConsumed}</h2>
             </div>

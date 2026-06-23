@@ -28,7 +28,7 @@ export default function Sidebar() {
       {
         name: "Pass History",
         icon: "📋",
-        path: "/manager/tickets",
+        path: "/manager/pass-history",
       },
     ],
   };

@@ -8,6 +8,7 @@ import NotFound from "../pages/UnknowRoute/NotFound";
 import ManagerDashboard from "../pages/Dashboard/DashboardPage";
 import ManagerCreatePass from "../pages/CreatePass/CreatePass";
 import PassPreview from "../pages/PassPreview/PassPreview";
+import ManagerPassHistory from "../pages/PassHistory/ManagerPassHistory";
 
 function AppNavigation() {
   return (
@@ -42,6 +43,15 @@ function AppNavigation() {
           element={
             <ProtectedRoute requiredRole="manager">
                 <PassPreview />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/manager/pass-history"
+          element={
+            <ProtectedRoute requiredRole="manager">
+                <ManagerPassHistory />
             </ProtectedRoute>
           }
         />

@@ -1,0 +1,179 @@
+.history-page {
+  padding: 10px;
+}
+
+/* Header */
+
+.history-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.history-header h1 {
+  color: #0f172a;
+
+  font-size: 32px;
+}
+
+.history-header p {
+  color: #64748b;
+}
+
+/* Summary */
+
+.history-summary {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+  gap: 22px;
+
+  margin-bottom: 30px;
+}
+
+.history-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #e2e8f0;
+}
+
+.history-card span {
+  width: 60px;
+
+  height: 60px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 18px;
+
+  background: #eff6ff;
+
+  font-size: 28px;
+}
+
+.history-card p {
+  color: #64748b;
+}
+
+.history-card h2 {
+  color: #1d4ed8;
+
+  font-size: 28px;
+}
+
+/* Table */
+
+.table-container {
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 20px;
+
+  overflow-x: auto;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+thead {
+  background: #eff6ff;
+}
+
+th {
+  text-align: left;
+
+  padding: 15px;
+
+  color: #1e3a8a;
+}
+
+td {
+  padding: 15px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #334155;
+}
+
+.ticket-id {
+  font-weight: 700;
+
+  color: #2563eb;
+
+  font-size: 13px;
+}
+
+/* badges */
+
+.payment {
+  background: #dbeafe;
+
+  color: #1d4ed8;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  text-transform: capitalize;
+}
+
+.status {
+  background: #dcfce7;
+
+  color: #15803d;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  text-transform: capitalize;
+}
+
+.status.consumed {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.history-loading {
+  text-align: center;
+
+  padding: 80px;
+
+  font-size: 25px;
+
+  color: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .history-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+}
